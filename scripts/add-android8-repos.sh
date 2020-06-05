@@ -80,6 +80,13 @@ dpkg -i /root/repowerd/*.deb
 rm -rf /root/repowerd
 apt-mark hold repowerd repowerd-data repowerd-tools
 
+# qtubuntu-position
+mkdir -p /root/qtubuntu-position
+wget https://build.lolinet.com/file/qtubuntu-position/qtubuntu-position_0.1%2Bubports_armhf.deb -P /root/qtubuntu-position/
+
+dpkg -i /root/qtubuntu-position/*.deb
+rm -rf /root/qtubuntu-position
+
 # Restore symlink
 rm /etc/resolv.conf
 mv /etc/resolv2.conf /etc/resolv.conf

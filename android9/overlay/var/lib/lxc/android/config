@@ -24,3 +24,4 @@ lxc.mount.entry = sys sys sysfs nodev,noexec,nosuid 0 0
 lxc.mount.entry = /android/data data bind bind 0 0
 lxc.mount.entry = /vendor vendor bind rbind 0 0
 lxc.mount.entry = /mnt mnt bind rbind 0 0
+lxc.mount.entry = /android/efs efs bind bind 0 0

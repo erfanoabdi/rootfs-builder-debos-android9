@@ -33,7 +33,7 @@ actions:
   - action: run
     chroot: true
     description: Create directories for Android mounts
-    command: mkdir -p /android /mnt/vendor/persist /userdata && ln -s /android/data /data && ln -s /android/system /system && ln -s /android/vendor /vendor && ln -s /android/cache /cache && ln -s /android/persist /persist && ln -s /android/product /product && ln -s /android/metadata /metadata
+    command: mkdir -p /android /mnt/vendor/persist /userdata && ln -s /android/data /data && ln -s /android/system /system && ln -s /android/vendor /vendor && ln -s /android/cache /cache && ln -s /android/persist /persist && ln -s /android/product /product && ln -s /android/metadata /metadata && ln -s /android/efs /efs
 
   - action: run
     chroot: true

@@ -49,6 +49,11 @@ actions:
     chroot: true
     description: Setting password on phablet user
     command: echo phablet:phablet | chpasswd
+    
+  - action: run
+    chroot: true
+    description: Creates timezone file
+    command: touch /etc/localtime
 
   - action: pack
     description: Compressing image
